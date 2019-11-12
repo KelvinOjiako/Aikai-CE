@@ -9,13 +9,14 @@ list of useful resources for building my chess engine/ neural network
 
 4)chess is fun https://faculty.cs.byu.edu/~rodham/cs240/chess/
 
-5)very interested but complicated engine code: https://github.com/techwithtim/Online-Chess-Game/blob/2fdeabd16ecfbd85c3cb911ade436c5da148faae/piece.py#L82
+5) unecessarily complicated chess engine: https://github.com/techwithtim/Online-Chess-Game/blob/2fdeabd16ecfbd85c3cb911ade436c5da148faae/piece.py#L82
 
 6) https://github.com/mnahinkhan/Chess/blob/master/Chess/chess.py
-
 
 
 Best half
 7) chess programming wiki: https://www.chessprogramming.org/Main_Page
 
-8)
+8) DNN: https://towardsdatascience.com/the-basics-of-deep-neural-networks-4dc39bff2c96
+
+9) for the engine phase: https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3#:~:targetText=Dynamic%20Programming%20is%20a%20method,array%2C%20map%2Cetc).
