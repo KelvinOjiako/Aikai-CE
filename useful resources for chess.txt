@@ -1,0 +1,21 @@
+list of useful resources for building my chess engine/ neural network
+
+1) a chess engine in java (on code review): https://codereview.stackexchange.com/questions/82312/simple-chess-game-part-2-the-pieces?rq=1
+
+2)sliding pieces https://www.chessprogramming.org/Sliding_Pieces
+
+3)Operating systems and systems programming project template to build a chess engine:
+   https://inst.eecs.berkeley.edu/~cs162/sp07/Nachos/chess.shtml
+
+4)chess is fun https://faculty.cs.byu.edu/~rodham/cs240/chess/
+
+5)very interested but complicated engine code: https://github.com/techwithtim/Online-Chess-Game/blob/2fdeabd16ecfbd85c3cb911ade436c5da148faae/piece.py#L82
+
+6) https://github.com/mnahinkhan/Chess/blob/master/Chess/chess.py
+
+
+
+Best half
+7) chess programming wiki: https://www.chessprogramming.org/Main_Page
+
+8)
