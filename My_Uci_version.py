@@ -3,6 +3,3 @@ Rather than creating a UI and doing unnecessary work, I will make Aikai comply w
 AKA the UCI (Universal CHess interface)
 
 """
-
-class My_Uci:
-  pass

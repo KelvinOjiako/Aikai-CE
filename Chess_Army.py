@@ -18,6 +18,7 @@ class Pawns(Piece):  # The Backbone of the Game
     def movement(self, target):
         row2 = target[0]
         col2 = target[1]
+        col = target[3]
 
         # No absolute value for row and col difference cause Pawns can NEVER!! move backwards
         row_diff = row2 - self.row
@@ -25,9 +26,11 @@ class Pawns(Piece):  # The Backbone of the Game
 
         if self.number_moves == 0 and row_diff == 2 and col_diff == 0:  # Moving twice on first move
             self.double_kicked = True
+            self.number_moves += 1
             return self.double_kicked
 
-        elif row_diff == 1 and col_diff == 0:
+        elif row_diff == 1 and col_diff == 0:  # The pawn race
+            self.number_moves += 1
             return True
 
         else:
@@ -43,6 +46,7 @@ class Pawns(Piece):  # The Backbone of the Game
 # Absolute value is needed for all pieces except the pawns
 
 class Knight(Piece):  # The tricky L shaped jumpers
+    symbol = 'N'
 
     def movement(self, target):
         row2 = target[0]
@@ -62,6 +66,8 @@ class Knight(Piece):  # The tricky L shaped jumpers
 
 
 class Bishop(Piece):  # Bishops travel  Diagon Alley!
+    symbol = 'B'
+
     def movement(self, target):
         row2 = target[0]
         col2 = target[1]
@@ -76,10 +82,9 @@ class Bishop(Piece):  # Bishops travel  Diagon Alley!
         else:
             return False
 
-        pass
-
 
 class Rook(Piece):  # Horizontal and vertical Guardians
+    sacred_symbol = 'R'
     moved_already = False  # determines if the king can castle in the side of the rook
 
     def movement(self, target):
@@ -98,6 +103,8 @@ class Rook(Piece):  # Horizontal and vertical Guardians
 
 
 class Queen(Piece):  # The most powerful force  (Combo of Bishop and Rook)
+    symbol = 'Q'
+
     def movement(self, target):
         row2 = target[0]
         col2 = target[1]
@@ -114,6 +121,7 @@ class Queen(Piece):  # The most powerful force  (Combo of Bishop and Rook)
 
 
 class King(Piece):  # The most fragile of them all!
+    sacred_symbol = 'K'
     moved_already = False  # determines if the king can castle
 
     def movement(self, target):

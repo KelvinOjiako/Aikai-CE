@@ -11,7 +11,7 @@ chess_state: looks at the state of the game from the board class
 
 
 
-supplement_tester: these are my sacred minions, the debugging framework.
+supplement_tester: the minions are the debugging framework.
     The minions do the following:
         1) they check to ensure there is a list of the last 49 previous game states
         2) check the validity of moves (valid moves are further reduced depending on check etc)

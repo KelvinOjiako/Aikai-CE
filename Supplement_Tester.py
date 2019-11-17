@@ -24,8 +24,5 @@ class Minion:  # My minions will act as the debugging framework
         self.count = 0
 
         pass
-    
-    def board_state(self):
-        pass
 
     pass
